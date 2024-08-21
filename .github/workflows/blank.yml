@@ -22,5 +22,4 @@ jobs:
           ls
           unzip download
           tar -xvzf sysroot.tgz
-          cd sysroot
           ls
