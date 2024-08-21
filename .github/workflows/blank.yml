@@ -22,4 +22,6 @@ jobs:
           ls
           unzip download
           tar -xvzf sysroot.tgz
+          cd sysroot-macos-arm64
           ls
+          ../build.sh -p macos -a arm64 -o ..
