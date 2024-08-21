@@ -18,6 +18,5 @@ jobs:
       
       - name: Download Sysroot
         run: |
-          pip install gdown
-          python -m gdown https://drive.google.com/file/d/1ix5k9Dv4l6mAR6fSgtISXOCbGj7EZO0Y/view?usp=sharing
+          curl -L -O "https://drive.usercontent.google.com/download?id=1ix5k9Dv4l6mAR6fSgtISXOCbGj7EZO0Y&export=download&authuser=1&confirm=t&uuid=ce4de02e-b83f-46c6-895d-8e797f9aaa91&at=APZUnTX0z4eItMh_AjHzhh0JxxoF:1724248409195"
           ls
