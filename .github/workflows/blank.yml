@@ -24,4 +24,5 @@ jobs:
           tar -xvzf sysroot.tgz
           cd sysroot-macos-arm64
           ls
+          chmod +x ../build.sh
           ../build.sh -p macos -a arm64 -o ..
