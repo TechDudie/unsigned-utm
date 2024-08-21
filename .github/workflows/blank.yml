@@ -18,7 +18,7 @@ jobs:
       
       - name: Download Sysroot
         run: |
-          curl -O https://github.com/utmapp/UTM/actions/runs/9218576036/artifacts/1533734085
+          curl -L -O https://github.com/utmapp/UTM/actions/runs/9218576036/artifacts/1533734085
           ls
           unzip 1533734085
           ls
