@@ -1,0 +1,23 @@
+name: CI
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+env:
+  BUILD_XCODE_PATH: /Applications/Xcode_15.3.app
+  RUNNER_IMAGE: macos-14
+
+jobs:
+  build:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Download Sysroot
+        run: |
+          wget https://github.com/utmapp/UTM/actions/runs/9218576036/artifacts/1533734085 -o sysroot-macos-arm64.zip
+          unzip sysroot-macos-arm64.zip
+          ls
